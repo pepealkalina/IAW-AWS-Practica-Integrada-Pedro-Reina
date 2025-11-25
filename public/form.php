@@ -57,9 +57,15 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Chivo+Mono:ital,wght@0,100..900;1,100..900&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Lexend:wght@100..900&display=swap" rel="stylesheet"> 
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=arrow_back_ios_new" />
 </head>
 <body>
     <header id="title">
+        <a href="index.php">
+            <span class="material-symbols-outlined">arrow_back_ios_new</span>
+            Volver al inicio
+        </a>
         <h1>Alta de Empleado</h1>
     </header>
     <form action="../src/validaciones.php" method="post" id="registerForm">
@@ -75,7 +81,7 @@
             <label for="dni">DNI</label>
             <input type="text" name="dni" id="dni">
 
-            <label for="mail">Correo electrónico</label>
+         <label for="mail">Correo electrónico</label>
             <input type="email" name="mail" id="mail">
 
             <label for="telefono">Telefóno</label>
@@ -85,7 +91,7 @@
         <fieldset class="form-field" id="datosEmpresa">
             <legend>Datos Empresa</legend>
 
-            <label for="nombre">Fecha de alta</label>
+               <label for="nombre">Fecha de alta</label>
             <input type="date" name="nombre" id="nombre">
 
             <?php

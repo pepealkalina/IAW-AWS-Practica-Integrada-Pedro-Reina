@@ -21,6 +21,15 @@ body {
     background-color: var(--color-light-background);
 }
 
+.material-symbols-outlined {
+  font-variation-settings:
+  'FILL' 0,
+  'wght' 400,
+  'GRAD' 0,
+  'opsz' 48
+}
+
+
 .form-field {
     display: flex;
     flex-direction: column;
@@ -67,6 +76,7 @@ body {
     font-optical-sizing: auto;
     font-weight: 400;
     font-style: normal;
+    appearance: none;
 }
 
 .form-field select:focus{
@@ -94,7 +104,6 @@ body {
 }
 
 #title {
-    text-align: center;
     position: fixed;
     padding-top: 30px;
     top: 0;
@@ -103,8 +112,24 @@ body {
     background-color: white;
     font-size: larger;
     color: var(--color-dark-green);
+    display: flex;
 }
+#title h1 {
+    text-align: center;
+    width: 100vw;
 
+}
+#title a {
+    color: var(--color-dark-green);
+    padding-left: 20px;
+    position: inherit;
+    margin-top: 30px;
+    text-decoration: none;
+    align-content: center;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
 #submit {
     font-family: "Josefin Sans", sans-serif;
     font-optical-sizing: auto;
@@ -112,12 +137,18 @@ body {
     font-style: normal;
     font-size: larger;
 
-    background-color: #537D5D;
+    background-color: var(--color-medium-green);
     color: white;
     border: none;
     padding: 15px;
     border-radius: 24px;
     margin-top: 10px;
-    
 
+    transition: 0.3s;
 }
+
+#submit:hover {
+    background-color: var(--color-dark-green);
+    transition: 0.3s;
+}
+
