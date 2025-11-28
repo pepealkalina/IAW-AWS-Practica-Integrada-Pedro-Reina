@@ -1,0 +1,64 @@
+:root {  /* Verde Oscuro / Color Primario Fuerte */
+  --color-dark-green: #537D5D;
+
+  /* Verde Medio / Color de Acento */
+  --color-medium-green: #73946B;
+
+  /* Verde Claro / Color Secundario */
+  --color-light-green: #9EBC8A;
+
+  /* Color Tierra / Neutro o Fondo Claro */
+  --color-earth-tone: #D2D0A0;
+
+  --color-light-background: #ecebd8;
+}
+
+body {
+    background-image: url("../images/image1.jpg");
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat:no-repeat;
+}
+
+#bodyDiv {
+    height: 90vh;
+    width: 100%;
+
+    text-align: center;
+    align-content: center;
+}
+
+header {
+    position: fixed;
+    padding-top: 5px;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: var(--color-dark-green);
+    font-size: larger;
+    color: var(--color-light-background);
+    display: flex;
+    padding-left: 10vw;
+}
+
+header h1 {
+    font-family: "DM Serif Text", serif;
+    font-weight: 600;
+    font-style: normal;
+    font-size: 48px;
+}
+
+#formButton {
+    color: var(--color-light-background);
+    background-color: var(--color-dark-green);
+    
+    text-decoration: none;
+
+    padding: 15px;
+    border-radius: 32px;
+
+    font-family: "DM Serif Text", serif;
+    font-weight: 600;
+    font-style: normal;
+    font-size: 24px;
+}

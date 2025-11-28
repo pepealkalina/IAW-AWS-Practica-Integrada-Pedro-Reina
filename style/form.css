@@ -35,13 +35,10 @@ body {
     flex-direction: column;
     flex-wrap: nowrap;
     width: min-content;
+    height: min-content;
     padding: 24px;
     font-weight: 100;
-    margin: 10px;
-    border-radius: 16px;
     border: none;
-    box-shadow: 0px 0px 10px 2px rgba(211, 211, 211, 0.75);
-    background-color: var(--color-earth-tone);
 }
 
 .form-field input{
@@ -51,7 +48,7 @@ body {
     border: solid var(--color-dark-green) 1px;
     border-radius: 16px;
     padding-block: 5px;
-    padding-inline: 10px;
+    padding-inline: 15px;
     font-family: "Josefin Sans", sans-serif;
     font-optical-sizing: auto;
     font-weight: 400;
@@ -64,18 +61,18 @@ body {
 }
 
 .form-field select{
-    width: 20rem;
+    width: 22rem;
     margin: 10px;
-    padding: 15px;
+    height: 32px;
     border: solid var(--color-dark-green) 1px;
     border-radius: 16px;
-    padding-block: 7px;
-    padding-inline: 10px;
-
+    padding-block: 5px;
+    padding-inline: 15px;
     font-family: "Josefin Sans", sans-serif;
     font-optical-sizing: auto;
     font-weight: 400;
     font-style: normal;
+
     appearance: none;
 }
 
@@ -95,17 +92,37 @@ body {
 }
 
 #registerForm {
+    height: min-content;
     width: 100%;
-    height: 100vh;
+}
+
+#registerFormDiv {
+    width: min-content;
+    height: min-content;
     display: flex;
     flex-direction: column;
+    background-color: var(--color-earth-tone);
+    border-radius: 16px;
+    border: none;
+    box-shadow: 0px 0px 10px 2px rgba(211, 211, 211, 0.75);
+    padding-top: 20px;
+    padding-bottom: 20px;
+    
+    margin-left: auto;
+    margin-right: auto;
+    
     align-items: center;
-    padding-bottom: 100px;
+}
+
+#formFieldsets {
+    width: min-content;
+    height: min-content;
+    display: flex;
 }
 
 #title {
     position: fixed;
-    padding-top: 30px;
+    padding-top: 5px;
     top: 0;
     left: 0;
     right: 0;
@@ -117,6 +134,10 @@ body {
 #title h1 {
     text-align: center;
     width: 100vw;
+    font-family: "DM Serif Text", serif;
+    font-weight: 600;
+    font-style: normal;
+    font-size: 48px;
 
 }
 #title a {
@@ -124,6 +145,7 @@ body {
     padding-left: 20px;
     position: inherit;
     margin-top: 30px;
+    padding-top: 30px;
     text-decoration: none;
     align-content: center;
     display: flex;
@@ -142,7 +164,12 @@ body {
     border: none;
     padding: 15px;
     border-radius: 24px;
-    margin-top: 10px;
+
+    height: min-content;
+    width: min-content;
+    margin-top: 20px;
+
+    
 
     transition: 0.3s;
 }
@@ -152,3 +179,18 @@ body {
     transition: 0.3s;
 }
 
+#formDiv {
+    width: 100%;
+    padding-top: 15px;
+}
+
+/* Aplica estos estilos cuando la pantalla tiene 600px o menos */
+@media screen and (max-width: 800px) {
+    #volverInicio {
+        display: none;
+    }
+
+    #formFieldsets {
+        flex-direction: column;
+    }
+}
