@@ -1,0 +1,102 @@
+
+
+:root {
+    /* Fondo principal (Crema/Verde claro muy suave) */
+    --color-background-primary: #ecebd8; 
+    /* Fondo del contenedor principal (Verde oliva claro) */
+    --color-card-background: #D2D0A0; 
+    /* Verde oscuro para el título y texto principal */
+    --color-text-primary: #73946B;
+    /* Verde más oscuro para el botón/resaltado */
+    --color-button-primary: #537D5D; 
+    /* Bordes y sombras suaves */
+    --color-shadow-light: rgba(0, 0, 0, 0.1);
+}
+
+/* ---------------------------------
+2. ESTILOS GLOBALES
+--------------------------------- */
+body {
+    background-color: var(--color-background-primary);
+    color: var(--color-button-primary);
+    margin: 0;
+    padding: 40px 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 150px;
+
+    font-family: "Josefin Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+}
+
+/* ---------------------------------
+3. ENCABEZADO (HEADER)
+--------------------------------- */
+header {
+    position: fixed;
+    padding-top: 5px;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: var(--color-dark-green);
+    font-size: larger;
+    color: var(--color-light-background);
+    display: flex;
+    background-color: white;
+}
+
+h1 {
+    text-align: center;
+    width: 100vw;
+    font-family: "DM Serif Text", serif;
+    font-weight: 600;
+    font-style: normal;
+    font-size: 48px;
+}
+
+/* ---------------------------------
+4. CONTENEDOR PRINCIPAL (INFO DIV)
+--------------------------------- */
+#infoDiv {
+    background-color: var(--color-card-background);
+    padding: 40px;
+    border-radius: 20px; /* Bordes redondeados del contenedor principal */
+    box-shadow: 0 4px 8px var(--color-shadow-light); /* Sombra suave */
+    width: 100%;
+    max-width: 600px; /* Ancho similar al formulario de la imagen */
+    display: flex;
+    flex-direction: column;
+    gap: 20px; /* Espacio entre los grupos de información */
+}
+
+/* ---------------------------------
+5. ESTILOS DE LA INFORMACIÓN (SPANS)
+--------------------------------- */
+.infoSpan {
+    display: flex; /* Permite alinear el contenido */
+    justify-content: space-between; /* Alinea etiquetas a la izquierda y valores a la derecha */
+    padding-bottom: 8px; /* Espacio debajo del elemento */
+    border-bottom: 1px solid rgba(69, 98, 71, 0.4); /* Línea divisoria suave */
+    font-size: 1.1rem;
+    align-items: center;
+}
+
+/* Estilo para los valores validados (simulando los campos de la imagen) */
+.infoSpan b {
+    font-weight: 600; /* Etiqueta en negrita */
+    color: var(--color-text-primary);
+}
+
+/* Contenedor del valor validado */
+#validatedInfo {
+    font-weight: 500;
+    padding: 2px 5px;
+    border-radius: 5px;
+    background-color: var(--color-background-primary); 
+    padding-block: 5px;
+    padding-inline: 10px;
+    border-radius: 16px;
+    color: crimson;
+}
