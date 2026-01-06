@@ -19,7 +19,7 @@
     </header>
     <div id="bodyDiv">
         <p>
-            Las alcachofas son el mejor alimento del mundo.
+            Las alcachofas son el mejor alimento del mundo. Y no es mentira
         </p>
         <a href="form.php" id="formButton">Darse de alta como empleado</a>
     </div>
