@@ -15,7 +15,7 @@
 </head>
 <body>
     <header>
-        <h1>Alca Chofas</h1>
+        <h1>Alca Chofas son moribundas</h1>
     </header>
     <div id="bodyDiv">
         <a href="form.php" id="formButton">Darse de alta como empleado</a>
