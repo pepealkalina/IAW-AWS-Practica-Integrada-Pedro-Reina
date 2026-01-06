@@ -18,6 +18,9 @@
         <h1>Alca Chofas</h1>
     </header>
     <div id="bodyDiv">
+        <p>
+            Las alcachofas son el mejor alimento del mundo.
+        </p>
         <a href="form.php" id="formButton">Darse de alta como empleado</a>
     </div>
 </body>
